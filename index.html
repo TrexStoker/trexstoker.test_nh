@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Veeam</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
@@ -10,11 +11,13 @@
 <body>
 <header class="page-header">
 	<div class="container">
-		<img src="imgs/logo.jpg" alt="" class="main-logo">
-		<div class="tagline">
-			<p class="head_sum">1 + 1 = 3</p>
-			<p>Veeam + NetApp</p>
-			<p class="tagline-small">Better Together</p>
+		<div class="back-head">
+			<img src="imgs/logo.jpg" alt="" class="main-logo">
+			<div class="tagline">
+				<p class="head_sum">1 + 1 = 3</p>
+				<p>Veeam + NetApp</p>
+				<p class="tagline-small">Better Together</p>
+			</div>
 		</div>
 	</div>
 </header>
@@ -79,7 +82,7 @@ Veeam Availability Suite v8</h2>
 	<div class="container">
 		<ul>
 			<li class="sub_nav_li"><a class="active" href="#">Integration</a></li>
-			<li class="sub_nav_li"><a class="not-active" href="#">Backup</a></li>
+			<li class="sub_nav_li back_up"><a class="not-active" href="#">Backup</a></li>
 			<li class="sub_nav_li"><a class="not-active" href="#">Recovery</a></li>
 			<li class="download_btn"><a class="download_link" href="#">Download now</a></li>
 		</ul>
@@ -92,13 +95,13 @@ Veeam Availability Suite v8</h2>
 		<div class="row fix">
 			<div class="col-6">
 				<ul class="explore_ul">
-					<li class="allows">Create backups from storage snapshots up to 20 times faster than competitive offerings</li>
-					<li class="allows">mprove DR protection by creating instant, secondary backups from storage snapshots</li>
+					<li class="ex_allows">Create backups from storage snapshots up to 20 times faster than competitive offerings</li>
+					<li class="ex_allows">mprove DR protection by creating instant, secondary backups from storage snapshots</li>
 				</ul>
 			</div>
 			<div class="col-6">
 				<ul class="explore_ul">
-					<li class="allows">Recover individual items or entire VMs quickly and efficiently from <b>NetApp Snapshot®</b>, <b>SnapMirror®</b> and <b>SnapVault®</b> with <b>Veeam Explorer™ for Storage Snapshots</b></li>
+					<li class="ex_allows">Recover individual items or entire VMs quickly and efficiently from <b>NetApp Snapshot®</b>, <b>SnapMirror®</b> and <b>SnapVault®</b> with <b>Veeam Explorer™ for Storage Snapshots</b></li>
 				</ul>
 			</div>
 		</div>
@@ -118,20 +121,20 @@ Veeam Availability Suite v8</h2>
 		<div class="row fix">
 			<div class="col-6">
 				<ul class="explore_ul">
-					<li class="allows"><b>Fast, application-consistent recovery points</b> by orchestrating NetApp Data ONTAP to create snapshot only backups</li>
-					<li class="allows"><b>Reduce data loss</b> by automating the creation of secondary backups from NetApp SnapVault</li>
+					<li class="ex_allows"><b>Fast, application-consistent recovery points</b> by orchestrating NetApp Data ONTAP to create snapshot only backups</li>
+					<li class="ex_allows"><b>Reduce data loss</b> by automating the creation of secondary backups from NetApp SnapVault</li>
 				</ul>
 			</div>
 			<div class="col-6">
 				<ul class="explore_ul">
-					<li class="allows"><b>Verified protection</b> by automating the testing of backups to guarantee the recoverability of every file,<br>application and virtual machine (VM)</li>
-					<li class="allows"><b>A cloud ready platform</b> that enhances data availability by providing an efficient way to get backups off site to a service provider</li>
+					<li class="ex_allows"><b>Verified protection</b> by automating the testing of backups to guarantee the recoverability of every file,<br>application and virtual machine (VM)</li>
+					<li class="ex_allows"><b>A cloud ready platform</b> that enhances data availability by providing an efficient way to get backups off site to a service provider</li>
 				</ul>
 			</div>
 		</div>
 		<img src="imgs/cloud.jpg" alt="" class="rdy_cloud">
 		<p class="mov_p">Ready for the Cloud</p>
-		<a href="http://fast.wistia.net/embed/iframe/w5k601c6f6?popover=true&ad=in-text-link" class="mov">Watch video on how Veeam integrates with NetApp</a>
+		<a href="http://fast.wistia.net/embed/iframe/w5k601c6f6?popover=true&ad=in-text-link" class="rdy_mov">Watch video on how Veeam integrates with NetApp</a>
 	</div>
 </div>
 <div class="fast_backups">
@@ -194,7 +197,7 @@ Veeam Availability Suite v8</h2>
 				</div>
 			</div>
 		</div>
-		<p class="fast_backups_p rslt">As the result, VMs run off snapshots for the shortest possible time, while jobs obtain data from VM snapshot files preserved in the storage snapshot. As the result, VM snapshots do not get a chance to grow large and can be committed very quickly without overloading production storage with extended merge procedure, as is the case with classic techniques for backing up from VM snapshots.</p>
+		<p class="rslt_backups_p rslt">As the result, VMs run off snapshots for the shortest possible time, while jobs obtain data from VM snapshot files preserved in the storage snapshot. As the result, VM snapshots do not get a chance to grow large and can be committed very quickly without overloading production storage with extended merge procedure, as is the case with classic techniques for backing up from VM snapshots.</p>
 	</div>
 </div>
 <div class="enjoy">
@@ -206,9 +209,9 @@ Veeam Availability Suite v8</h2>
 					<p class="enjoy_p_b">Restore from a storage snapshot in minutes!</p>
 					<p class="enjoy_p">With Veeam Explorer for Storage Snapshots, you can take advantage of the low overhead that periodic SAN snapshots offer for low recovery point objectives (RPOs), and let Veeam Backup & Replication™ automate the whole recovery process for you, bringing you low recovery time objectives (RTOs) as well. You can:</p>
 					<ul class="enjoy_ul">
-						<li class="allows">Recover guest OS files (for Windows, Linux, Novell , etc.), application items or an entire VM from a storage snapshot in two minutes or less</li>
-						<li class="allows">Restore directly from storage snapshots, eliminating the need for staging and intermediate restores</li>
-						<li class="allows">Reduce the time needed to mount snapshots 10 times or more compared to manual processes, lowering your RTOs while avoiding human errors that can occur during critical recovery steps such as mounting snapshots</li>
+						<li class="ex_allows">Recover guest OS files (for Windows, Linux, Novell , etc.), application items or an entire VM from a storage snapshot in two minutes or less</li>
+						<li class="ex_allows">Restore directly from storage snapshots, eliminating the need for staging and intermediate restores</li>
+						<li class="ex_allows">Reduce the time needed to mount snapshots 10 times or more compared to manual processes, lowering your RTOs while avoiding human errors that can occur during critical recovery steps such as mounting snapshots</li>
 					</ul>
 					<p class="enjoy_p epfix">With Veeam Explorer for Storage Snapshots, you can take advantage of the low overhead that periodic SAN snapshots offer for low recovery point objectives (RPOs), and let Veeam Backup & Replication™ automate the whole recovery process for you, bringing you low recovery time objectives (RTOs) as well. You can:</p>
 					<a href="http://fast.wistia.net/embed/iframe/w5k601c6f6?popover=true&ad=in-text-link" class="mov rd_pr">Watch video on how Veeam integrates with NetApp</a>
@@ -247,12 +250,14 @@ Veeam Availability Suite v8</h2>
 		</div>
 	</div>
 </div>
+
 <div class="about_sw">
-	<div class="container">
+	<div class="container">		
 		<h2 class="about_sw_title">About Veeam Software</h2>
 		<p class="sw_p">Veeam® enables the Always-On Business™ by providing solutions that deliver Availability for the Modern Data Center™, which provides recovery time and point objectives (RTPO™) of less than 15 minutes for all applications and data. Veeam Backup & Replication™ leverages technologies that enable the modern data center, including VMware vSphere, Microsoft Hyper-V, NetApp storage, and HP 3PAR StoreServ and StoreVirtual Storage, to help organizations meet RTPOs, save time, mitigate risks, and dramatically reduce capital and operational costs. Veeam Availability Suite™ provides all of the benefits and features of Veeam Backup & Replication along with advanced monitoring, reporting and capacity planning for the backup infrastructure.</p>
 	</div>
 </div>
+
 </main>
 
 <footer class="page-footer">
